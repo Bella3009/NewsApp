@@ -4,8 +4,8 @@ from send_email import send_email
 #newsapi.org
 api_key = "d16abece8b5446b698fbbab95c443604"
 topic = input("What topic you wish to see: ")
-lang = input("Choose language: en or it ")
-url = f"https://newsapi.org/v2/everything?q={topic}&sortBy=publishedAt&apiKey={api_key}&language={lang}"
+
+url = f"https://newsapi.org/v2/everything?q={topic}&sortBy=publishedAt&apiKey={api_key}&language=en"
 
 # Making the request
 r = requests.get(url)
