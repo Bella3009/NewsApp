@@ -19,7 +19,7 @@ for article in content['articles'][:20]:
 
 # Add also a subject to the email.
 message = f"""\
-Subject: News titles
+Subject: Today's News
 
 {body}
 """
